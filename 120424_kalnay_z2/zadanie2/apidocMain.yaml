@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: API Documentation
+  version: 1.0.0
+paths:
+  /zadanie2/api/api/v0/laureates/{id}:
+    $ref: './apidoc.yaml#/paths/~1laureate~1{id}'
+  /zadanie2/api/api/v0/laureates:
+    $ref: './apidoc.yaml#/paths/~1laureate'
+  /zadanie2/api/api/v0/countries/{id}:
+    $ref: './apidoc2.yaml#/paths/~1country~1{id}'
+  /zadanie2/api/api/v0/countries:
+    $ref: './apidoc2.yaml#/paths/~1country'
+  /zadanie2/api/api/v0/prize/{id}:
+    $ref: './apidoc3.yaml#/paths/~1prize~1{id}'
+  /zadanie2/api/api/v0/prize:
+    $ref: './apidoc3.yaml#/paths/~1prize'
+  /zadanie2/api/api/v0/details/{id}:
+    $ref: './apidoc4.yaml#/paths/~1details~1{id}'
+  /zadanie2/api/api/v0/details:
+    $ref: './apidoc4.yaml#/paths/~1details'
+components:
+  schemas:
+    laureate:
+      $ref: './apidoc.yaml#/components/schemas/laureate'
+    country:
+      $ref: './apidoc2.yaml#/components/schemas/country'
+    prize:
+      $ref: './apidoc3.yaml#/components/schemas/prize'
+    details:
+      $ref: './apidoc4.yaml#/components/schemas/detail'
